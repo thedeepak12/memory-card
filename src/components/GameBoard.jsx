@@ -3,7 +3,7 @@ import Card from './Card';
 
 function GameBoard({ cards, onClick }) {
   return (
-    <div className="grid grid-cols-5 gap-6  mt-8 ml-8 mr-8 mb-8">
+    <div className="grid sm:grid-cols-3 lg:grid-cols-5 gap-6  mt-8 ml-8 mr-8 mb-8">
       {cards.length > 0 ? (
         cards.map((card) => (
           <Card
